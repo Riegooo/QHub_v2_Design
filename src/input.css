@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
+*{
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: inherit
+    font-family: inherit;
 }
 

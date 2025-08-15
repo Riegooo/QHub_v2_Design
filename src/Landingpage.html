@@ -9,7 +9,7 @@
 </head>
 <body class="m-0 p-0">
     
-    <header class="bg-[#101820] w-[100%] backdrop-blur-2xl flex top-0 left-0 justify-between items-center z-[1000] px-[50px]">
+    <header class="bg-[#101820] w-[100%] backdrop-blur-2xl fixed flex top-0 left-0 justify-between items-center z-[1000] px-[50px]">
         <div class="flex items-center">
             <img src="img/Quizzical-logo.png" alt="" class="w-[80px] h-[78px]">
             <h1 class="text-[#FEE715] font-bold">QUIZZICAL HUB</h1>
@@ -17,43 +17,82 @@
         <ul class="flex relative right-[50px] text-white items-center">
             <li class="ml-[2rem]">
                 <i class="fa-solid fa-house mx-1 w-5 mt-1 text-center flex-shrink-0"></i>
-                <a href="#" class="text-white hover:text-[#FEE715] transition-all ease-in-[0.5s]">Home</a>
+                <a href="#Home" class="text-white transition-all ease-in-[0.5s] hover:text-[#FEE715]">Home</a>
             </li>
 
             <li class="ml-[2rem]">
                 <i class="fa-solid fa-book mx-1 w-5 mt-1 text-center flex-shrink-0"></i>
-                <a href="#" class="text-white hover:text-[#FEE715] transition-all ease-in-[0.5s]">About</a>
+                <a href="#About" class="text-white transition-all ease-in-[0.5s] hover:text-[#FEE715]">About</a>
             </li>
 
             <li class="ml-[2rem]">
                 <i class="fa-solid fa-chart-column mx-1 w-5 mt-1 text-center flex-shrink-0"></i>
-                <a href="#" class="text-white hover:text-[#FEE715] transition-all ease-in-[0.5s]">Others</a>
+                <a href="#" class="text-white transition-all ease-in-[0.5s] hover:text-[#FEE715]">Others</a>
             </li>
 
-            <a href="#"><input type="button" value="Get Started" class="ml-[2rem] text-black rounded-[10px] bg-[#FEE715] p-[8px] font-medium hover:bg-[#ccb800] transition-all ease-in-[0.5s]"></a>
+            <a href="#"><input type="button" value="Get Started" class="ml-[2rem] text-black rounded-[10px] bg-[#FEE715] p-[8px] font-medium transition-all ease-in-[0.5s] hover:bg-[#ccb800]"></a>
         </ul>
     </header>
 
-    <div class="py-[5rem] px-[10rem] max-w-[1200px] m-auto">
-        <div class="items-center text-center mt-[2rem]">
+    <div class="py-[10rem] px-[10rem] max-w-[1200px] m-auto" id="Home">
+        <div class="items-center text-center mt-[1rem]">
             <h1 class="w-[300px] p-[5px] bg-[#FEE715] rounded-[10px] font-bold relative left-[50%] translate-[-50%]">
-                SMAC PROGRAMMING QUIZ
+                PROGRAMMING QUIZ
             </h1>
         </div>
         <div class="text-center">
-            <h1 class="text-[4rem] font-bold">SMAC QUIZZICAL HUB</h1>
-            <p class="font-medium text-[1.3rem] text-sm/5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id at sunt ipsum commodi aperiam, eaque eveniet repudiandae totam expedita nostrum eum qui molestiae quas hic ea assumenda, error tenetur. In.</p>
+            <h1 class="text-[4rem] font-bold text-[#101820]">SMAC QUIZZICAL HUB</h1>
+            <p class="font-medium text-[1.3rem] text-sm/6 text-gray-700">
+                Smac Quizzical Hub is e space for ICT students of SMAC to explore, practice, and challenge their programming skills. 
+                Focused on HTML, CSS, and JavaScript, Join Quizzical Hub and start showcasing your skills.
+            </p>
             <div class="mt-[2rem] mb-[1rem]">
-                <a href="" class="mr-[1rem] text-white bg-black p-[15px] font-semibold text-[1.20rem] rounded-[10px] items-center"><input type="button" value="Get Started" class=""><i class="fa-solid fa-angle-right text-[1.20rem] ml-5 arrow-transition"></i></a>
-                <a href="" class="border-[2px] p-[15px] font-semibold text-[1.20rem] rounded-[10px]"><input type="button" value="Explore" class=""></a>
+                <a href="" class="mr-[1rem] text-white bg-black p-[15px] font-semibold text-[1.20rem] rounded-[10px] items-center transition-all ease-in-[0.5s] hover:bg-[#101820]">
+                    <input type="button" value="Get Started" class="">
+                    <i class="fa-solid fa-angle-right text-[1.20rem] ml-5 arrow-transition"></i></a>
+                <a href="" class="border-[2px] p-[15px] font-semibold text-[1.20rem] rounded-[10px] transition-all ease-in-[0.5s] hover:rounded-tr-[20px] hover:rounded-bl-[20px]">
+                    <input type="button" value="See How It Works" class=""></a>
             </div>
         </div>
 
         <div class="p-[1rem] text-center px-[5rem] py-[3rem] mt-[2rem]">
-            <i class="fa-brands fa-html5 text-[4rem]"></i>
-            <i class="fa-brands fa-css3 text-[4rem] ml-[8rem]"></i>
-            <i class="fa-brands fa-js text-[4rem] ml-[8rem]"></i>
+            <i class="fa-brands fa-html5 text-[4rem] opacity-70 transition-all ease-in-[0.5s] hover:opacity-100"></i>
+            <i class="fa-brands fa-css3 text-[4rem] ml-[8rem] opacity-70 transition-all ease-in-[0.5s] hover:opacity-100"></i>
+            <i class="fa-brands fa-js text-[4rem] ml-[8rem] opacity-70 transition-all ease-in-[0.5s] hover:opacity-100"></i>
         </div>
     </div>
+
+    <div class="py-[4rem] px-[10rem] border-[1px]" id="About">
+        <div class="text-center items-center">
+            <h1 class="text-black text-[3rem] font-bold items-center text-center">What are we about?</h1>
+        <p>
+            Welcome to Smac Quizzical Hub — the hangout spot for ICT students at SMAC who want to have fun while leveling up their coding skills.
+            We turn HTML, CSS, and JavaScript into exciting quizzes and challenges that keep your brain sharp and your skills fresh.</p>
+        </div>
+        <div class="grid grid-cols-3 gap-[10px] mt-[4rem] max-w-[1200px] m-auto shadow-md">
+            <div class="p-[10px] text-center border-[1px] rounded-[5px] border-[#e7e7e7]">
+                <i class="fa-solid fa-book mx-1 w-5 mt-1 text-center flex-shrink-0 text-[2rem]"></i>
+                <h4 class="font-semibold text-[1.40rem]">About Website</h4>
+                <p>the ultimat
+                    Smac Quizzical Hub is a learning and challenge platform built for ICT students of SMAC who want to sharpen their web development skills.
+                    We combine HTML, CSS, and JavaScript.
+                </p>
+            </div>
+            <div class="p-[10px] text-center border-[1px] rounded-[5px] border-[#e7e7e7] shadow-md">
+                <i class="fa-solid fa-code mx-1 w-5 mt-1 text-center flex-shrink-0 text-[2rem]"></i>
+                <h4 class="font-semibold text-[1.40rem]">St. Matthew Academy of Cavite</h4>
+                <p class="text-gray-700">Join Quizzical Hub and start showcasing your skills.</p>
+            </div>
+            <div class="p-[10px] text-center border-[1px] rounded-[5px] border-[#e7e7e7] shadow-md">
+                <i class="fa-brands fa-dev mx-1 w-5 mt-1 text-center flex-shrink-0 text-[2rem]"></i>
+                <h4 class="font-semibold text-[1.40rem] mb-[1rem]">Quizzical Hub Developers</h4>
+                <a href="#" class="p-[10px] text-black mt-[1rem] text-[1rem] rounded-[5px] border-[1px] border-black">
+                    <input type="button" value="View Developer Team">
+                <i class="fa-solid fa-angle-right text-[1rem] ml-2 arrow-transition"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
