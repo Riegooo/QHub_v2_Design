@@ -203,29 +203,35 @@
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
-  .mt-\[1rem\] {
-    margin-top: 1rem;
-  }
   .mt-\[2rem\] {
     margin-top: 2rem;
-  }
-  .mt-\[3rem\] {
-    margin-top: 3rem;
   }
   .mt-\[5rem\] {
     margin-top: 5rem;
   }
-  .mt-\[10px\] {
-    margin-top: 10px;
-  }
   .mr-\[1rem\] {
     margin-right: 1rem;
+  }
+  .mb-\[1rem\] {
+    margin-bottom: 1rem;
   }
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
   }
+  .ml-\[1rem\] {
+    margin-left: 1rem;
+  }
   .ml-\[2rem\] {
     margin-left: 2rem;
+  }
+  .ml-\[3rem\] {
+    margin-left: 3rem;
+  }
+  .ml-\[8rem\] {
+    margin-left: 8rem;
+  }
+  .ml-\[10rem\] {
+    margin-left: 10rem;
   }
   .flex {
     display: flex;
@@ -307,35 +313,50 @@
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
+  .p-\[1rem\] {
+    padding: 1rem;
+  }
   .p-\[5px\] {
     padding: 5px;
   }
   .p-\[8px\] {
     padding: 8px;
   }
-  .p-\[10px\] {
-    padding: 10px;
-  }
   .p-\[15px\] {
     padding: 15px;
-  }
-  .p-\[20px\] {
-    padding: 20px;
   }
   .px-\[2rem\] {
     padding-inline: 2rem;
   }
+  .px-\[5rem\] {
+    padding-inline: 5rem;
+  }
   .px-\[7rem\] {
     padding-inline: 7rem;
+  }
+  .px-\[10rem\] {
+    padding-inline: 10rem;
   }
   .px-\[50px\] {
     padding-inline: 50px;
   }
-  .py-\[1rem\] {
-    padding-block: 1rem;
-  }
   .py-\[2rem\] {
     padding-block: 2rem;
+  }
+  .py-\[3rem\] {
+    padding-block: 3rem;
+  }
+  .py-\[5rem\] {
+    padding-block: 5rem;
+  }
+  .py-\[6rem\] {
+    padding-block: 6rem;
+  }
+  .py-\[7rem\] {
+    padding-block: 7rem;
+  }
+  .py-\[10rem\] {
+    padding-block: 10rem;
   }
   .text-center {
     text-align: center;
@@ -343,6 +364,10 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-sm\/5 {
+    font-size: var(--text-sm);
+    line-height: calc(var(--spacing) * 5);
   }
   .text-sm\/6 {
     font-size: var(--text-sm);
@@ -353,12 +378,6 @@
   }
   .text-\[1\.20rem\] {
     font-size: 1.20rem;
-  }
-  .text-\[1\.30rem\] {
-    font-size: 1.30rem;
-  }
-  .text-\[1\.50rem\] {
-    font-size: 1.50rem;
   }
   .text-\[1rem\] {
     font-size: 1rem;
@@ -372,20 +391,12 @@
   .text-\[4rem\] {
     font-size: 4rem;
   }
-  .text-\[14px\] {
-    font-size: 14px;
+  .text-\[5rem\] {
+    font-size: 5rem;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-  }
-  .font-extrabold {
-    --tw-font-weight: var(--font-weight-extrabold);
-    font-weight: var(--font-weight-extrabold);
-  }
-  .font-light {
-    --tw-font-weight: var(--font-weight-light);
-    font-weight: var(--font-weight-light);
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
