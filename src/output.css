@@ -16,6 +16,8 @@
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -214,14 +216,23 @@
   .mt-\[2rem\] {
     margin-top: 2rem;
   }
+  .mt-\[3rem\] {
+    margin-top: 3rem;
+  }
   .mt-\[4rem\] {
     margin-top: 4rem;
+  }
+  .mt-\[5rem\] {
+    margin-top: 5rem;
   }
   .mr-\[1rem\] {
     margin-right: 1rem;
   }
   .mb-\[1rem\] {
     margin-bottom: 1rem;
+  }
+  .mb-\[2rem\] {
+    margin-bottom: 2rem;
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
@@ -235,11 +246,14 @@
   .ml-\[2rem\] {
     margin-left: 2rem;
   }
-  .ml-\[5rem\] {
-    margin-left: 5rem;
+  .ml-\[5px\] {
+    margin-left: 5px;
   }
   .ml-\[8rem\] {
     margin-left: 8rem;
+  }
+  .ml-\[10px\] {
+    margin-left: 10px;
   }
   .flex {
     display: flex;
@@ -265,9 +279,6 @@
   .w-\[300px\] {
     width: 300px;
   }
-  .max-w-\[1000px\] {
-    max-width: 1000px;
-  }
   .max-w-\[1200px\] {
     max-width: 1200px;
   }
@@ -290,12 +301,6 @@
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .items-center {
     align-items: center;
@@ -346,11 +351,20 @@
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
+  .p-\[1\.50rem\] {
+    padding: 1.50rem;
+  }
   .p-\[1rem\] {
     padding: 1rem;
   }
+  .p-\[2rem\] {
+    padding: 2rem;
+  }
   .p-\[5px\] {
     padding: 5px;
+  }
+  .p-\[5rem\] {
+    padding: 5rem;
   }
   .p-\[8px\] {
     padding: 8px;
@@ -361,8 +375,14 @@
   .p-\[15px\] {
     padding: 15px;
   }
+  .px-\[1rem\] {
+    padding-inline: 1rem;
+  }
   .px-\[2rem\] {
     padding-inline: 2rem;
+  }
+  .px-\[3rem\] {
+    padding-inline: 3rem;
   }
   .px-\[5rem\] {
     padding-inline: 5rem;
@@ -372,6 +392,9 @@
   }
   .px-\[50px\] {
     padding-inline: 50px;
+  }
+  .py-\[1rem\] {
+    padding-block: 1rem;
   }
   .py-\[3rem\] {
     padding-block: 3rem;
@@ -402,6 +425,9 @@
   .text-\[1\.40rem\] {
     font-size: 1.40rem;
   }
+  .text-\[1\.50rem\] {
+    font-size: 1.50rem;
+  }
   .text-\[1rem\] {
     font-size: 1rem;
   }
@@ -418,9 +444,17 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
+  }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -455,9 +489,6 @@
   }
   .opacity-50 {
     opacity: 50%;
-  }
-  .opacity-70 {
-    opacity: 70%;
   }
   .opacity-80 {
     opacity: 80%;
@@ -516,6 +547,13 @@
     &:hover {
       @media (hover: hover) {
         color: #FEE715;
+      }
+    }
+  }
+  .hover\:opacity-50 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 50%;
       }
     }
   }
