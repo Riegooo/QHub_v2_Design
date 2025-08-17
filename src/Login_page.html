@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./output.css" rel="stylesheet">
 </head>
-<body class="m-0 p-0 bg-[url(img/SchoolBackground.png)] bg-no-repeat bg-center bg-cover bg-fixed">
-    <header class="bg-[#101820] w-[100%] backdrop-blur-2xl flex top-0 left-0 justify-between items-center z-[1000] px-[60px]">
+<body class="m-0 p-0 h-screen w-screen bg-gradient-to-b from-gray-50">
+    <header class="bg-[#101820] w-[100%] backdrop-blur-2xl fixed flex top-0 left-0 justify-between items-center z-[1000] px-[60px] max-[700px]:px-[10px]">
         <div class="flex items-center">
             <a href="./Landing_page.html"><img src="img/Quizzical-logo.png" alt="" class="w-[80px] h-[78px]"></a>
-            <h1 class="text-[#FEE715] font-bold">QUIZZICAL HUB</h1>
+            <h1 class="text-[#FEE715] font-bold max-[700px]:hidden">QUIZZICAL HUB</h1>
         </div>
-        <ul class="flex relative right-[50px] text-white items-center">
-            <li class="ml-[2rem]">
-                <i class="fa-solid fa-house mx-1 w-5 mt-1 text-center flex-shrink-0"></i>
-                <a href="./Landing_page.html" class="text-white transition-all ease-in-[0.5s] hover:text-[#FEE715]">Home</a>
+        <ul class="flex relative right-[50px] text-white items-center max-[420px]:right-[10px]">
+            <li class="ml-[2rem] max-[420px]:hidden">
+                <i class="fa-solid fa-house mx-1 w-5 mt-1 text-center flex-shrink-0 max-[420px]:hidden"></i>
+                <a href="./Landing_page.html" class="text-white transition-all ease-in-[0.5s] hover:text-[#FEE715] max-[420px]:hidden">Home</a>
             </li>
             <a href="./Login_page.html">
                 <input type="button" value="Sign Up" class="ml-[2rem] text-black rounded-[10px] bg-[#FEE715] p-[8px] font-medium transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">
@@ -25,23 +25,26 @@
     </header>
     <div class="items-center">
         <form id="loginForm">
-        <div class="grid grid-cols-2">
-            <div class="px-[3rem] py-[5rem] border-[1px] text-center items-center">
-                <h1 class="relative top-[250px] text-[1.50rem] font-semibold">"Programming isn't about what you know; it's about what you can figure out."</h1>
-                <p class="relative top-[260px]">- Chris Pine</p>
+        <div class="grid grid-cols-2 max-lg:grid-cols-1">
+            <div class="px-[5rem] py-[5rem] text-center items-center max-lg:hidden">
+                <h4 class="relative top-[250px] font-bold text-[2rem]">&lt;&gt;</h4>
+                <h1 class="relative top-[250px] text-[1.50rem] font-bold max-xl:text-[1rem] max-lg:hidden">"Programming isn't about what you know; it's about what you can figure out."</h1>
+                <p class="relative top-[260px] max-lg:hidden">- Chris Pine</p>
             </div>
 
-            <div class="px-[2rem] py-[10rem] bg-[#101820] items-center">
+            <div class="px-[2rem] py-[7rem] bg-[#101820] h-screen items-center flex flex-col">
                 <div class="items-center text-center p-[2rem]">
-                    <h1 class="text-[#FEE715] text-[1.80rem] font-semibold">Quizzical Hub Login</h1>
+                    <h1 class="text-[#FEE715] text-[2rem] font-semibold max-[420px]:text-[1.50rem]">Quizzical Hub Login</h1>
                     <p class="text-gray-600">Let’s get you back to learning</p>
                 </div>
-                <div class="items-center text-center">
-                    <input type="text" name="username" id="username" class="username-form p-[10px] rounded-[10px] bg-white w-[300px]" placeholder="Username" required>
+                <div class="items-center">
+                    <p class="text-[#FEE715]">Username</p>
+                    <input type="text" name="username" id="username" class="username-form p-[10px] rounded-[10px] bg-white w-[320px] mt-[7px] focus:outline-none focus:ring-1 focus:ring-[#FEE715] max-[420px]:w-[250px]" placeholder="Enter your esername" required>
                     <br>
-                    <input type="password" name="password" id="password" class="password-form p-[10px] rounded-[10px] mt-[10px] mb-[30px] bg-white w-[300px]" placeholder="Password" required>
+                    <p class="mt-[15px] text-[#FEE715]">Password</p>
+                    <input type="password" name="password" id="password" class="password-form p-[10px] rounded-[10px] mb-[30px] bg-white w-[320px] mt-[7px] focus:outline-none focus:ring-1 focus:ring-[#FEE715] max-[420px]:w-[250px]" placeholder="Enter your password" required>
                     <br>
-                    <button type="submit" class="bg-[#FEE715] p-[10px] w-[320px] font-bold text-[#101820] rounded-[10px]">Sign in</button>
+                    <button type="submit" class="bg-[#FEE715] p-[10px] w-[320px] font-bold text-[#101820] rounded-[10px] border-none max-[420px]:w-[250px]">Sign in</button>
                 </div>
                 <div class="text-center mt-[10px] p-[10px]">
                     <p class="text-gray-600">Don't Have an Account? <a href="" class="text-[#FEE715]">Register Here</a></p>
@@ -50,28 +53,6 @@
         </div>
         </form>
     </div>
-    <footer class="p-[20px] py-[5rem] bg-[#101820] text-center items-center">
-        <div class="m-auto max-w-[600px]">
-            <div class="flex items-center">
-                <img src="img/Smac-logo-Transparent.png" alt="" class="w-[75px]">
-                <img src="img/Quizzical-logo.png" alt="" class="w-[75px]">
-                <ul class="text-white flex">
-                    <li><h3 class="text-[#FEE715]">&copy;2024-2025 Krv Academy</h3></li>
-                    <li class="ml-[1rem] inline-block">
-                        <a href="#Home" class="text-white transition-all ease-in-[0.5s] hover:text-[#FEE715]">Home</a>
-                    </li>
-
-                    <li class="ml-[1rem]">
-                        <a href="#About" class="text-white transition-all ease-in-[0.5s] hover:text-[#FEE715]">About</a>
-                    </li>
-
-                    <li class="ml-[1rem]">
-                        <a href="#Howitworks" class="text-white transition-all ease-in-[0.5s] hover:text-[#FEE715]">How It Works</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
     <script src="Js/ForLogin_Page.js"></script>
 </body>
 </html>
