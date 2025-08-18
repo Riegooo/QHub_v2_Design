@@ -1,4 +1,4 @@
- document.getElementById("registerForm").addEventListener("submit", function (e) {
+document.getElementById("registerForm").addEventListener("submit", function (e) {
     e.preventDefault();
     
     const username = document.getElementById("username").value;
@@ -31,5 +31,5 @@
     localStorage.setItem("users", JSON.stringify(users));
     
     alert("Registration successful! You can now log in.");
-    window.location.href = "../login/index.html";
+    window.location.href = "./Login_page.html";
 });

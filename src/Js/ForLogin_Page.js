@@ -9,7 +9,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     if (user) {
         localStorage.setItem("loggedInUser", JSON.stringify(user));
         alert("Login successful! " + user.username);
-        window.location.href = "../Main/Homepage.html";
+        window.location.href = "";
     } else {
         alert("Invalid username or password!");
     }
