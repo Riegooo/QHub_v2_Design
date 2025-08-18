@@ -22,11 +22,11 @@
                 <h1 class="text-[#FEE715] font-bold text-[1.20rem]">QUIZZICAL HUB</h1>
             </div>
             <ul class="py-[2rem] text-white px-[1rem]">
-                <li class="p-[10px] hover:bg-[#102741] transition-colors duration-300">
+                <li class="p-[10px] hover:bg-[#102741] transition-colors duration-300 rounded-[10px]">
                     <i class="fa-solid fa-gear"></i>
                     <a href="#" class="ml-[15px]">View Account</a>
                 </li>
-                <li class="p-[10px] mt-[10px] hover:bg-[#102741] transition-colors duration-300">
+                <li class="p-[10px] mt-[10px] hover:bg-[#102741] transition-colors duration-300 rounded-[10px]">
                     <i class="fa-solid fa-ranking-star"></i>
                     <a href="#" class="ml-[10px]">Quizzical Points</a>
                 </li>
@@ -37,7 +37,7 @@
         </div>
 
         <div class="transition-all duration-300 ease-in-out pt-[5rem] ml-[280px] h-screen w-screen px-[2rem] mt-[1rem]">
-            <div class="items-center  text-black border-gray-200 shadow-sm p-[2rem] rounded-[5px] mt-[1rem] bg-white">
+            <div class="items-center  text-black border-gray-200 shadow-sm p-[2rem] rounded-[5px] mt-[1rem] bg-white hover:shadow-md transition-all ease-in-[0.5s]">
                 <div class="flex items-center">
                     <i class="fa-solid fa-user text-[4rem] p-[10px] bg-[#FEE715] rounded-[10px] mr-[10px]"></i>
                     <h1 id="username-display" class="ml-[10px] text-[4rem]"></h1>
@@ -46,29 +46,29 @@
             </div>
 
             <div class="grid grid-cols-3 gap-[2rem] mt-[2rem]">
-                <div class="border-gray-200 shadow-sm p-[2rem] rounded-[5px] bg-white">
+                <div class="border-gray-200 border shadow-sm p-[2rem] rounded-[5px] bg-white hover:shadow-md transition-all ease-in-[0.5s]">
                     <div class="items-center flex ">
                         <i class="fa-solid fa-hourglass-start mr-[10px] font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
-                        <a href="#" class="p-[10px] bg-[#FEE715] rounded-[10px]">
-                            <input type="button" value="Start Quiz">
+                        <a href="#" class="p-[10px] bg-[#FEE715] rounded-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">
+                            <input type="button" value="Start Quiz" class="font-semibold">
                             <i class="fa-solid fa-angle-right"></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="border-gray-200 shadow-sm p-[2rem] rounded-[5px] bg-white">
+                <div class="border-gray-200 border shadow-sm p-[2rem] rounded-[5px] bg-white hover:shadow-md transition-all ease-in-[0.5s]">
                     <div class="text-black flex items-center">
                         <i class="fa-solid fa-tag font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
-                        <h4 class="mr-[10px] font-bold ml-[10px] text-[1.50rem]">Section:</h4>
-                        <h5 id="password-display" class="text-[1.50rem]"></h5>
+                        <h4 class="mr-[10px] font-medium ml-[10px] text-[1.50rem] max-[1310px]:text-[1.20rem] text-gray-600">Section:</h4>
+                        <h5 id="password-display" class="text-[1.50rem] max-[1310px]:text-[1.20rem] font-bold"></h5>
                     </div>
                 </div>
 
-                <div class="border-gray-200 shadow-sm p-[2rem] rounded-[5px] bg-white">
+                <div class="border-gray-200 border shadow-sm p-[2rem] rounded-[5px] bg-white hover:shadow-md transition-all ease-in-[0.5s]">
                     <div class="text-black flex items-center">
                         <i class="fa-solid fa-chart-bar font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
-                        <h4 class="mr-[10px] font-bold ml-[10px] text-[1.50rem]">Overall Score:</h4>
-                        <h5 id="total-points" class="text-[1.50rem]"></h5>
+                        <h4 class="mr-[10px] font-medium ml-[10px] text-[1.50rem] max-[1310px]:text-[1.20rem] text-gray-600">Overall Score:</h4>
+                        <h5 id="total-points" class="text-[1.50rem] max-[1310px]:text-[1.20rem] font-bold"></h5>
                     </div>
                 </div>
             </div>
