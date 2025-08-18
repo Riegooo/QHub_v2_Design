@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./output.css" rel="stylesheet">
+    <title>Quizzical Hub - Dashboard</title>
+    <script src="./Js/ForHome_Page.js"></script>
+</head>
+<body class="p-0 m-0">
+    <header class="bg-[#101820] w-[100%] backdrop-blur-2xl fixed flex top-0 left-0 justify-between items-center  px-[50px]">
+        <div class="flex items-center">
+            <img src="img/Quizzical-logo.png" alt="" class="w-[80px] h-[78px]">
+            <h1 class="text-[#FEE715] font-bold">QUIZZICAL HUB</h1>
+        </div>
+    </header>
+    <div class="flex bg-gray-50">
+        <div class="fixed left-0 top-0 bg-[#101820] overflow-hidden h-screen w-[280px] z-30">
+            <div class="items-center p-[1rem] text-center flex border-b-[1px] border-white">
+                <img src="./img/Quizzical-logo.png" alt="" class="w-[75px]">
+                <h1 class="text-[#FEE715] font-bold text-[1.20rem]">QUIZZICAL HUB</h1>
+            </div>
+            <ul class="py-[2rem] text-white px-[1rem]">
+                <li class="p-[10px] hover:bg-[#102741] transition-colors duration-300">
+                    <i class="fa-solid fa-gear"></i>
+                    <a href="#" class="ml-[15px]">View Account</a>
+                </li>
+                <li class="p-[10px] mt-[10px] hover:bg-[#102741] transition-colors duration-300">
+                    <i class="fa-solid fa-ranking-star"></i>
+                    <a href="#" class="ml-[10px]">Quizzical Points</a>
+                </li>
+            </ul>
+            <div class="py-[2rem] border-t-[1px] border-white items-center px-[20px] text-center">
+                <button type="button" id="logout-button" class="p-[1rem] bg-[#FEE715] mt-[2rem] w-[200px] text-black font-semibold rounded-[5px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button>
+            </div>
+        </div>
+
+        <div class="transition-all duration-300 ease-in-out pt-[5rem] ml-[280px] h-screen w-screen px-[2rem] mt-[1rem]">
+            <div class="items-center  text-black border-gray-200 shadow-sm p-[2rem] rounded-[5px] mt-[1rem] bg-white">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-user text-[4rem] p-[10px] bg-[#FEE715] rounded-[10px] mr-[10px]"></i>
+                    <h1 id="username-display" class="ml-[10px] text-[4rem]"></h1>
+                </div>
+                <p>My Dashboard</p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-[2rem] mt-[2rem]">
+                <div class="border-gray-200 shadow-sm p-[2rem] rounded-[5px] bg-white">
+                    <div class="items-center flex ">
+                        <i class="fa-solid fa-hourglass-start mr-[10px] font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
+                        <a href="#" class="p-[10px] bg-[#FEE715] rounded-[10px]">
+                            <input type="button" value="Start Quiz">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="border-gray-200 shadow-sm p-[2rem] rounded-[5px] bg-white">
+                    <div class="text-black flex items-center">
+                        <i class="fa-solid fa-tag font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
+                        <h4 class="mr-[10px] font-bold ml-[10px] text-[1.50rem]">Section:</h4>
+                        <h5 id="password-display" class="text-[1.50rem]"></h5>
+                    </div>
+                </div>
+
+                <div class="border-gray-200 shadow-sm p-[2rem] rounded-[5px] bg-white">
+                    <div class="text-black flex items-center">
+                        <i class="fa-solid fa-chart-bar font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
+                        <h4 class="mr-[10px] font-bold ml-[10px] text-[1.50rem]">Overall Score:</h4>
+                        <h5 id="total-points" class="text-[1.50rem]"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
