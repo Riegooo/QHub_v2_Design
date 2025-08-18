@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./output.css" rel="stylesheet">
-    <title>Quizzical Hub - Dashboard</title>
-    <script src="./Js/ForHome_Page.js"></script>
+    <title>Quizzical Hub - User Account</title>
+    <script src="./Js/ForUser_info.js"></script>
 </head>
 <body class="p-0 m-0">
     <header class="bg-[#101820] w-[100%] backdrop-blur-2xl fixed flex top-0 left-0 justify-between items-center px-[50px]">
@@ -21,7 +21,7 @@
                 <img src="./img/Quizzical-logo.png" alt="" class="w-[75px]">
                 <h1 class="text-[#FEE715] font-bold text-[1.20rem]">QUIZZICAL HUB</h1>
             </div>
-            <p class="text-center text-white border-b">Student Dashboard</p>
+            <p class="text-center text-white border-b">Student Account</p>
             <ul class="py-[2rem] text-white px-[1rem]">
                 <li class="p-[10px] hover:bg-[#102741] transition-colors duration-300 rounded-[10px]">
                     <i class="fa-solid fa-chart-line"></i>
@@ -29,7 +29,7 @@
                 </li>
                 <li class="p-[10px] mt-[5px] hover:bg-[#102741] transition-colors duration-300 rounded-[10px]">
                     <i class="fa-solid fa-gear"></i>
-                    <a href="./UserAccount_Page.html" class="ml-[15px]">View Account</a>
+                    <a href="#" class="ml-[15px]">View Account</a>
                 </li>
                 <li class="p-[10px] mt-[5px] hover:bg-[#102741] transition-colors duration-300 rounded-[10px]">
                     <i class="fa-solid fa-ranking-star"></i>
@@ -47,17 +47,15 @@
                     <i class="fa-solid fa-user text-[4rem] p-[10px] bg-[#FEE715] rounded-[10px] mr-[10px]"></i>
                     <h1 id="username-display" class="ml-[10px] text-[4rem]"></h1>
                 </div>
-                <p>My Dashboard</p>
+                <p>My Account</p>
             </div>
 
-            <div class="grid grid-cols-3 gap-[2rem] mt-[2rem]">
+            <div class="grid grid-cols-3 gap-[1rem] mt-[1rem]">
                 <div class="border-gray-200 border shadow-sm p-[2rem] rounded-[5px] bg-white hover:shadow-md transition-all ease-in-[0.5s]">
-                    <div class="items-center flex ">
-                        <i class="fa-solid fa-hourglass-start mr-[10px] font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
-                        <a href="#" class="p-[10px] bg-[#FEE715] rounded-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">
-                            <input type="button" value="Start Quiz" class="font-semibold">
-                            <i class="fa-solid fa-angle-right"></i>
-                        </a>
+                    <div class="text-black flex items-center">
+                        <i class="fa-solid fa-tag font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
+                        <h4 class="mr-[10px] font-medium ml-[10px] text-[1.50rem] max-[1310px]:text-[1.20rem] text-gray-600">LastName:</h4>
+                        <h5 id="lastname-display" class="text-[1.50rem] max-[1310px]:text-[1.20rem] font-bold"></h5>
                     </div>
                 </div>
 
@@ -65,15 +63,28 @@
                     <div class="text-black flex items-center">
                         <i class="fa-solid fa-tag font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
                         <h4 class="mr-[10px] font-medium ml-[10px] text-[1.50rem] max-[1310px]:text-[1.20rem] text-gray-600">Section:</h4>
-                        <h5 id="password-display" class="text-[1.50rem] max-[1310px]:text-[1.20rem] font-bold"></h5>
+                        <h5 id="strand-display" class="text-[1.50rem] max-[1310px]:text-[1.20rem] font-bold"></h5>
                     </div>
                 </div>
 
                 <div class="border-gray-200 border shadow-sm p-[2rem] rounded-[5px] bg-white hover:shadow-md transition-all ease-in-[0.5s]">
                     <div class="text-black flex items-center">
                         <i class="fa-solid fa-chart-bar font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
-                        <h4 class="mr-[10px] font-medium ml-[10px] text-[1.50rem] max-[1310px]:text-[1.20rem] text-gray-600">Overall Score:</h4>
+                        <h4 class="mr-[10px] font-medium ml-[10px] text-[1.50rem] max-[1310px]:text-[1.20rem] text-gray-600">Overall Points:</h4>
                         <h5 id="total-points" class="text-[1.50rem] max-[1310px]:text-[1.20rem] font-bold"></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 gap-[10px] mt-[1rem]">
+                <div class="border-gray-200 border shadow-sm p-[2rem] rounded-[5px] bg-white hover:shadow-md transition-all ease-in-[0.5s]">
+                    <div class="text-black flex items-center">
+                        <i class="fa-solid fa-lock font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
+                        <input type="checkbox" id="click-password" class="peer hidden"> 
+                        <label for="click-password" class="click-pass p-[10px] ml-[1rem] mr-[5px] bg-[#FEE715] rounded-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70 cursor-pointer"><i class="fa-solid fa-eye"></i> View password</label>
+                        <div class="opacity-0 invisible peer-checked:opacity-100 peer-checked:visible p-[10px] flex items-center bg-[#101820] rounded-[5px]">
+                            <p class="mr-[8px] text-[1.20rem] text-[#FEE715]">Password:</p>
+                            <h5 id="password-display" class="text-[1.50rem] max-[1310px]:text-[1.20rem] font-semibold text-white"></h5>
+                        </div>
                     </div>
                 </div>
             </div>

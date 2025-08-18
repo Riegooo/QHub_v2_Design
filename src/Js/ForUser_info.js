@@ -6,7 +6,9 @@ window.onload = function() {
         document.getElementById("password-display").textContent = loggedInUser.password;
         document.getElementById("lastname-display").textContent = loggedInUser.lastname;
         document.getElementById("strand-display").textContent = loggedInUser.strand;
-
+        document.getElementById("strand-display").textContent =
+        loggedInUser.strand ? loggedInUser.strand : "No strand found";
+        
         let quiz1Points = localStorage.getItem(loggedInUser.username + "_quiz1_points");
         let quiz2Points = localStorage.getItem(loggedInUser.username + "_quiz2_points");
         let html1points = localStorage.getItem(loggedInUser.username + "_html_choice");
@@ -17,15 +19,15 @@ window.onload = function() {
         quiz1Points = quiz1Points ? parseInt(quiz1Points) : 0;
         quiz2Points = quiz2Points ? parseInt(quiz2Points) : 0;
         html1points = html1points ? parseInt(html1points) : 0;
-        html2points = html2points ? parseInt(html2points) :0;
-        css1points = css1points ? parseInt(css1points) :0;
-        css2points = css2points ? parseInt(css2points) :0;
+        html2points = html2points ? parseInt(html2points) : 0;
+        css1points = css1points ? parseInt(css1points) : 0;
+        css2points = css2points ? parseInt(css2points) : 0;
 
         localStorage.setItem(loggedInUser.username + "_quiz1_points", quiz1Points);
         localStorage.setItem(loggedInUser.username + "_quiz2_points", quiz2Points);
         localStorage.setItem(loggedInUser.username + "_html_choice", html1points);
         localStorage.setItem(loggedInUser.username + "_html_blank", html2points);
-        localStorage.setItem(loggedInUser .username + "_css_choice", css1points);
+        localStorage.setItem(loggedInUser.username + "_css_choice", css1points);
         localStorage.setItem(loggedInUser.username + "_css_blank", css2points);
 
         let cssPoints = css1points + css2points;
@@ -51,6 +53,11 @@ window.onload = function() {
         if (css1Element) css1Element.textContent = css1points;
         if (css2Element) css2Element.textContent = css2points;
         if (cssElement) cssElement.textContent = cssPoints;
+
+        document.getElementById("logout-button").addEventListener("click", function() {
+            localStorage.removeItem("loggedInUser");
+            window.location.href = "./Login_page.html";
+        });
 
     } else {
         window.location.href = "../login/index.html";
