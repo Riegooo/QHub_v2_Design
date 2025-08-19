@@ -9,27 +9,21 @@
     <script src="./Js/ForUser_info.js"></script>
 </head>
 <body class="p-0 m-0">
-    <header class="bg-[#101820] w-[100%] backdrop-blur-2xl fixed flex top-0 left-0 justify-between items-center px-[50px]">
-        <div class="flex items-center">
-            <img src="img/Quizzical-logo.png" alt="" class="w-[80px] h-[78px]">
-            <h1 class="text-[#FEE715] font-bold">QUIZZICAL HUB</h1>
-        </div>
-    </header>
     <div class="flex bg-gray-50">
-        <div class="fixed left-0 top-0 bg-[#101820] overflow-hidden h-screen w-[280px] z-30">
+        <div class="sticky left-0 top-0 bg-[#101820] overflow-hidden h-screen w-[280px] z-30 max-[800px]:hidden">
             <div class="items-center p-[1rem] text-center flex border-b-[1px] border-white">
                 <img src="./img/Quizzical-logo.png" alt="" class="w-[75px]">
                 <h1 class="text-[#FEE715] font-bold text-[1.20rem]">QUIZZICAL HUB</h1>
             </div>
-            <p class="text-center text-white border-b">Student Account</p>
+            <p class="text-center text-white border-b">Student Profile</p>
             <ul class="py-[2rem] text-white px-[1rem]">
                 <li class="p-[10px] hover:bg-[#102741] transition-colors duration-300 rounded-[10px]">
                     <i class="fa-solid fa-chart-line"></i>
                     <a href="./Home_Page.html" class="ml-[15px]">Dashboard</a>
                 </li>
-                <li class="p-[10px] mt-[5px] hover:bg-[#102741] transition-colors duration-300 rounded-[10px]">
+                <li class="bg-[#102741] p-[10px] mt-[5px]  transition-colors duration-300 rounded-[10px]">
                     <i class="fa-solid fa-gear"></i>
-                    <a href="./UserAccount_Page.html" class="ml-[15px]">View Account</a>
+                    <a href="./UserAccount_Page.html" class="ml-[15px]">User Profile</a>
                 </li>
                 <li class="p-[10px] mt-[5px] hover:bg-[#102741] transition-colors duration-300 rounded-[10px]">
                     <i class="fa-solid fa-ranking-star"></i>
@@ -41,49 +35,56 @@
             </div>
         </div>
 
-        <div class="transition-all duration-300 ease-in-out pt-[5rem] ml-[280px] h-screen w-screen px-[2rem] mt-[1rem]">
-            <div class="items-center  text-black border-gray-200 shadow-sm p-[2rem] rounded-[5px] mt-[1rem] bg-white hover:shadow-md transition-all ease-in-[0.5s] border-l-[10px] border-l-[#101820]">
+        <div class="flex-1">
+            <header class="bg-[#101820] flex justify-between items-center p-[10px]">
                 <div class="flex items-center">
-                    <i class="fa-solid fa-user text-[4rem] p-[10px] bg-[#FEE715] rounded-[10px] mr-[10px]"></i>
-                    <h1 id="username-display" class="ml-[10px] text-[4rem]"></h1>
+                    <i class="fa-solid fa-bars text-white"></i>
                 </div>
-                <p>My Account</p>
-            </div>
-
-            <div class="grid grid-cols-3 gap-[1rem] mt-[1rem]">
-                <div class="border-gray-200 border shadow-sm p-[2rem] rounded-[5px] bg-white hover:shadow-md transition-all ease-in-[0.5s]">
-                    <div class="text-black flex items-center">
-                        <i class="fa-solid fa-tag font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
-                        <h4 class="mr-[10px] font-medium ml-[10px] text-[1.50rem] max-[1310px]:text-[1.20rem] text-gray-600">LastName:</h4>
-                        <h5 id="lastname-display" class="text-[1.50rem] max-[1310px]:text-[1.20rem] font-bold"></h5>
+            </header>
+            <div class="transition-all duration-300 ease-in-out  px-[2rem] mt-[1rem]">
+                <div class="items-center  text-black border-gray-200 shadow-sm p-[2rem] rounded-[5px] mt-[1rem] bg-white hover:shadow-md transition-all ease-in-[0.5s] border-l-[10px] border-l-[#101820]">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-user text-[4rem] p-[10px] bg-[#FEE715] rounded-[10px] mr-[10px]"></i>
+                        <h1 id="username-display" class="ml-[10px] text-[4rem]"></h1>
                     </div>
+                    <p>My Account</p>
                 </div>
 
-                <div class="border-gray-200 border shadow-sm p-[2rem] rounded-[5px] bg-white hover:shadow-md transition-all ease-in-[0.5s]">
-                    <div class="text-black flex items-center">
-                        <i class="fa-solid fa-tag font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
-                        <h4 class="mr-[10px] font-medium ml-[10px] text-[1.50rem] max-[1310px]:text-[1.20rem] text-gray-600">Section:</h4>
-                        <h5 id="strand-display" class="text-[1.50rem] max-[1310px]:text-[1.20rem] font-bold"></h5>
+                <div class="grid grid-cols-3 gap-[1rem] mt-[1rem]">
+                    <div class="border-gray-200 border shadow-sm p-[2rem] rounded-[5px] bg-white hover:shadow-md transition-all ease-in-[0.5s]">
+                        <div class="text-black flex items-center">
+                            <i class="fa-solid fa-tag font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
+                            <h4 class="mr-[10px] font-medium ml-[10px] text-[1.50rem] max-[1310px]:text-[1.20rem] text-gray-600">LastName:</h4>
+                            <h5 id="lastname-display" class="text-[1.50rem] max-[1310px]:text-[1.20rem] font-bold"></h5>
+                        </div>
                     </div>
-                </div>
 
-                <div class="border-gray-200 border shadow-sm p-[2rem] rounded-[5px] bg-white hover:shadow-md transition-all ease-in-[0.5s]">
-                    <div class="text-black flex items-center">
-                        <i class="fa-solid fa-chart-bar font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
-                        <h4 class="mr-[10px] font-medium ml-[10px] text-[1.50rem] max-[1310px]:text-[1.20rem] text-gray-600">Overall Points:</h4>
-                        <h5 id="total-points" class="text-[1.50rem] max-[1310px]:text-[1.20rem] font-bold"></h5>
+                    <div class="border-gray-200 border shadow-sm p-[2rem] rounded-[5px] bg-white hover:shadow-md transition-all ease-in-[0.5s]">
+                        <div class="text-black flex items-center">
+                            <i class="fa-solid fa-tag font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
+                            <h4 class="mr-[10px] font-medium ml-[10px] text-[1.50rem] max-[1310px]:text-[1.20rem] text-gray-600">Section:</h4>
+                            <h5 id="strand-display" class="text-[1.50rem] max-[1310px]:text-[1.20rem] font-bold"></h5>
+                        </div>
+                    </div>
+
+                    <div class="border-gray-200 border shadow-sm p-[2rem] rounded-[5px] bg-white hover:shadow-md transition-all ease-in-[0.5s]">
+                        <div class="text-black flex items-center">
+                            <i class="fa-solid fa-chart-bar font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
+                            <h4 class="mr-[10px] font-medium ml-[10px] text-[1.50rem] max-[1310px]:text-[1.20rem] text-gray-600">Overall Points:</h4>
+                            <h5 id="total-points" class="text-[1.50rem] max-[1310px]:text-[1.20rem] font-bold"></h5>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="grid grid-cols-1 gap-[10px] mt-[1rem]">
-                <div class="border-gray-200 border shadow-sm p-[2rem] rounded-[5px] bg-white hover:shadow-md transition-all ease-in-[0.5s]">
-                    <div class="text-black flex items-center">
-                        <i class="fa-solid fa-lock font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
-                        <input type="checkbox" id="click-password" class="peer hidden"> 
-                        <label for="click-password" class="click-pass p-[10px] ml-[1rem] mr-[5px] bg-[#FEE715] rounded-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70 cursor-pointer"><i class="fa-solid fa-eye"></i> View password</label>
-                        <div class="opacity-0 invisible peer-checked:opacity-100 peer-checked:visible p-[10px] flex items-center bg-[#101820] rounded-[5px]">
-                            <p class="mr-[8px] text-[1.20rem] text-[#FEE715]">Password:</p>
-                            <h5 id="password-display" class="text-[1.50rem] max-[1310px]:text-[1.20rem] font-semibold text-white"></h5>
+                <div class="grid grid-cols-1 gap-[10px] mt-[1rem]">
+                    <div class="border-gray-200 border shadow-sm p-[2rem] rounded-[5px] bg-white hover:shadow-md transition-all ease-in-[0.5s]">
+                        <div class="text-black flex items-center">
+                            <i class="fa-solid fa-lock font-bold text-[1.50rem] border-black border-2 p-[10px] text-blue-600 bg-[#101820] items-center text-center rounded-[10px]"></i>
+                            <input type="checkbox" id="click-password" class="peer hidden"> 
+                            <label for="click-password" class="click-pass p-[10px] ml-[1rem] mr-[5px] bg-[#FEE715] rounded-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70 cursor-pointer"><i class="fa-solid fa-eye"></i> View password</label>
+                            <div class="opacity-0 invisible peer-checked:opacity-100 peer-checked:visible p-[10px] flex items-center bg-[#101820] rounded-[5px]">
+                                <p class="mr-[8px] text-[1.20rem] text-[#FEE715]">Password:</p>
+                                <h5 id="password-display" class="text-[1.50rem] max-[1310px]:text-[1.20rem] font-semibold text-white"></h5>
+                            </div>
                         </div>
                     </div>
                 </div>
