@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./output.css" rel="stylesheet">
+    <title>Quizzical Hub - Quizzical Points</title>
+    <script src="./Js/ForUser_Points.js"></script>
+</head>
+<body class="p-0 m-0">
+    <div class="flex bg-gray-50">
+        <div class="sticky left-0 top-0 bg-[#101820] overflow-hidden h-screen w-[280px] z-30 max-[800px]:hidden">
+            <div class="items-center p-[1rem] text-center flex border-b-[1px] border-white">
+                <img src="./img/Quizzical-logo.png" alt="" class="w-[75px]">
+                <h1 class="text-[#FEE715] font-bold text-[1.20rem]">QUIZZICAL HUB</h1>
+            </div>
+            <p class="text-center text-white border-b">Quizzical Info</p>
+            <ul class="py-[2rem] text-white px-[1rem]">
+                <li class="p-[10px] hover:bg-[#102741] transition-colors duration-300 rounded-[10px]">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <a href="./Home_Page.html" class="ml-[15px]">Dashboard</a>
+                </li>
+                <li class="p-[10px] mt-[5px] hover:bg-[#102741] transition-colors duration-300 rounded-[10px]">
+                    <i class="fa-solid fa-gear"></i>
+                    <a href="./UserAccount_Page.html" class="ml-[15px]">User Profile</a>
+                </li>
+                <li class="p-[10px] mt-[5px] hover:bg-[#102741] transition-colors duration-300 rounded-[10px]">
+                    <i class="fa-solid fa-ranking-star"></i>
+                    <a href="./UserPoints_Page.html" class="ml-[10px]">Quizzical Points</a>
+                </li>
+                <li class="bg-[#102741] p-[10px] mt-[5px] transition-colors duration-300 rounded-[10px]">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <a href="./QuizInfo_Page.html" class="ml-[10px]">Quiz Information</a>
+                </li>
+            </ul>
+            <div class="py-[2rem] border-t-[1px] border-white items-center px-[20px] text-center">
+                <button type="button" id="logout-button" class="p-[1rem] bg-[#FEE715] mt-[2rem] w-[200px] text-black font-semibold rounded-[5px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button>
+            </div>
+        </div>
+
+        <div class="flex-1">
+            <header class="bg-[#101820] flex justify-between items-center p-[10px]">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-bars text-white"></i>
+                </div>
+            </header>
+            <div class="transition-all duration-300 ease-in-out px-[2rem] mt-[1rem]">
+                <div class="items-center  text-black border-gray-200 shadow-sm p-[2rem] rounded-[5px] mt-[1rem] bg-white hover:shadow-md transition-all ease-in-[0.5s] border-l-[10px] border-l-[#101820]">
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-user text-[4rem] p-[10px] bg-[#FEE715] rounded-[10px] mr-[10px]"></i>
+                        <h1 id="username-display" class="ml-[10px] text-[4rem]"></h1>
+                    </div>
+                    <p>Quiz Information</p>
+                </div>
+
+                <div class="py-[10px] mt-[1rem] border-gray-200 border shadow-sm rounded-[5px] bg-[#FEE715] hover:shadow-md transition-all ease-in-[0.5s] border-l-[10px] border-l-[#101820]">
+                    <div class="flex items-center p-[10px]">
+                        <i class="fa-solid fa-circle-info text-[1.50rem]"></i>
+                        <h1 class="ml-[10px] text-[1.50rem] font-semibold">Quizzical Information</h1>
+                    </div>
+                    <p class="px-[10px]">Please read the quiz information before you start</p>
+                    <div class="grid grid-cols-1 p-[10px] py-[1rem] max-[1100px]:grid-cols-1">
+                        <div class="px-[10px] py-[20px]">
+                            <div class="flex items-center py-[10px] rounded-[5px] mb-[20px] bg-[#101820] px-[10px]">
+                                <i class="fa-solid fa-info text-[#FEE715]"></i>
+                                <h4 class="ml-[10px] text-gray-200">HTML AND CSS ONLY</h4>
+                            </div>
+
+                            <div class="flex items-center py-[10px] rounded-[5px] mb-[20px] bg-[#101820] px-[10px]">
+                                <i class="fa-solid fa-info text-[#FEE715]"></i>
+                                <h4 class="ml-[10px] text-gray-200">25 Questions covering of HTML</h4>
+                            </div>
+
+                            <div class="flex items-center py-[10px] rounded-[5px] mb-[20px] bg-[#101820] px-[10px]">
+                                <i class="fa-solid fa-info text-[#FEE715]"></i>
+                                <h4 class="ml-[10px] text-gray-200">25 Questions covering of CSS</h4>
+                            </div>
+
+                            <div class="flex items-center py-[10px] rounded-[5px] bg-[#101820] px-[10px]">
+                                <i class="fa-solid fa-info text-[#FEE715]"></i>
+                                <h4 class="ml-[10px] text-gray-200">Fill in the blank and Multiple Choice</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
