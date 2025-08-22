@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./output.css" rel="stylesheet">
+    <title>Quizzical Hub - HTML BLANK</title>
+    <script src="./Js/ForHTML(BLANK)_Page.js"></script>
+</head>
+<body class="m-0 p-0 ">
+    <header class="bg-[#101820] w-[100%] backdrop-blur-2xl fixed flex top-0 left-0 justify-between items-center z-[1000] px-[50px]">
+        <div class="flex items-center">
+            <img src="img/Quizzical-logo.png" alt="" class="w-[80px] h-[78px]">
+            <h1 class="text-[#FEE715] font-bold">QUIZZICAL HUB</h1>
+        </div>
+        <ul class="flex relative right-[50px] text-white items-center">
+            <a href="./Home_Page.html" class="ml-[2rem] text-black rounded-[10px] bg-[#FEE715] p-[8px] font-medium transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">
+                <i class="fa-solid fa-angle-left"></i>
+                <input type="button" value="Dashboard">
+            </a>
+        </ul>
+    </header>
+
+    <div class="py-[4rem] px-[2rem] w-screen max-w-[1200px] m-auto bg-[#101820]">
+        <div class="text-center py-[1rem]">
+                <h1 class="text-[2rem] font-bold text-[#FEE715]">HTML FILL IN THE BLANK</h1>
+                </div>
+                <div class="items-center px-[1rem] py-[1rem] text-center h-screen bg-[#101820]" id="quiz-container">
+                    <div class="question-set text-white" id="questions-set1">
+                        <div class="question p-[10px]">
+                            <label for="question1" class="text-[1.20rem] p-[10px]">1.The< !DOCTYPE > decleration for HTML is written as < !DOCTYPE<span>_____</span>></label><br>
+                            <input type="text" id="question1" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question2" class="text-[1.20rem] p-[10px]">2. The main container for HTML content is the < <span>____</span> > tag.</label><br>
+                            <input type="text" id="question2" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question3" class="text-[1.20rem] p-[10px]">3. To create a hyperlink, we use the < a <span>____</span>="...."> < /a >  tag.</label><br>
+                            <input type="text" id="question3" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question4" class="text-[1.20rem] p-[10px]">4.The attribute used to define an image source in img is <span>_____</span>.</label><br>
+                            <input type="text" id="question4" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question5" class="text-[1.20rem] p-[10px]">5.The tag used to define a table row is <span>_____</span>.</label><br>
+                            <input type="text" id="question5" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <button type="button" onclick="back()" class="p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">Previous</button>
+                        <a href="./HTML_(QuizPoint).html" class="ml-[1rem] p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70"><button>Back</button></a>
+                        <button type="button" onclick="nextSet()" class="ml-[1rem] p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">Next</button>
+                    </div>
+
+                    <div class="question-set text-white" id="questions-set2" style="display:none;">
+                        <div class="question p-[10px]">
+                            <label for="question6" class="text-[1.20rem] p-[10px]">  6. < !DOCTYPE <span>______</span> ></label><br>
+                            <input type="text" id="question6" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question7" class="text-[1.20rem] p-[10px]">  7. < <span>____</span> > < html > < head > < title > title < /title > < /head > < /html >.</label><br>
+                            <input type="text" id="question7" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question8" class="text-[1.20rem] p-[10px]">  8. < <span>_____</span> > My page < /<span>_____</span> ></label><br>
+                            <input type="text" id="question8" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question9" class="text-[1.20rem] p-[10px]">  9.< <span>____</span> charset="UTF-8"></label><br>
+                            <input type="text" id="question9" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question10 class="text-[1.20rem] p-[10px]"">10. < h1 ><span>_____</span> = " color: red; " > This is color red < /h1 ></label><br>
+                            <input type="text" id="question10" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                            <button type="button" onclick="back()" class="p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">Previous</button>
+                            <a href="./HTML_(QuizPoint).html" class="ml-[1rem] p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70"><button>Back</button></a>
+                            <button type="button" onclick="nextSet()" class="ml-[1rem] p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">Next</button>
+                    </div>
+
+                    <div id="questions-set3" class="question-set text-white" style="display:none;">
+                        <div class="question p-[10px]">
+                            <label for="question11" class="text-[1.20rem] p-[10px]">11. < input type=<span>"___"</span> ></label><br>
+                            <input type="text" id="question11" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question12" class="text-[1.20rem] p-[10px]">12. < <span>___</span> src="img.jpg" alt="Image" ></label><br>
+                            <input type="text" id="question12" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question13" class="text-[1.20rem] p-[10px]">13. < form <span>______</span>="post" ></label><br>
+                            <input type="text" id="question13" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question14" class="text-[1.20rem] p-[10px]">14. < a<span>____</span>="https://example.com> Click < /a >" </label><br>
+                            <input type="text" id="question14" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question15" class="text-[1.20rem] p-[10px]">15. < ul > < <span>__</span> > Item 1  < /<span>__</span> >  < /ul > </label><br>
+                            <input type="text" id="question15" placeholder="Enter you answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                            <button type="button" onclick="back()" class="p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">Previous</button>
+                            <a href="./HTML_(QuizPoint).html" class="ml-[1rem] p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70"><button>Back</button></a>
+                            <button type="button" onclick="nextSet()" class="ml-[1rem] p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">Next</button>
+                    </div>
+
+                    <div id="questions-set4" class="question-set text-white" style="display:none;">
+                        <div class="question p-[10px]">
+                            <label for="question16" class="text-[1.20rem] p-[10px]">16. < ol > < <span>__</span> > Item 1 < /<span>__</span> >< /ol ></label><br>
+                            <input type="text" id="question16" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question17" class="text-[1.20rem] p-[10px]">17. < table < tr > < <span>__</span> > Data < /<span>__</span> > < /tr > < /table ></label><br>
+                            <input type="text" id="question17" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question18" class="text-[1.20rem] p-[10px]">18. < div <span>____</span>="container" ></label><br>
+                            <input type="text" id="question18" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question19" class="text-[1.20rem] p-[10px]">19. < p <span>____</span>="text-center"> Centered text < /p ></label><br>
+                            <input type="text" id="question19" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question20" class="text-[1.20rem] p-[10px]">20. < button <span>____</span>="Submit"> Submit < /button ></label><br>
+                            <input type="text" id="question20" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                            <button type="button" onclick="back()" class="p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">Previous</button>
+                            <a href="./HTML_(QuizPoint).html" class="ml-[1rem] p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70"><button>Back</button></a>
+                            <button type="button" onclick="nextSet()" class="ml-[1rem] p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">Next</button>
+                    </div>
+
+                    <div id="questions-set5" class="question-set text-white" style="display:none;">
+                        <div class="question p-[10px]">
+                            <label for="question21" class="text-[1.20rem] p-[10px]">21. < iframe <span>_____</span>="https://example.com" < /iframe ></label><br>
+                            <input type="text" id="question21" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question22" class="text-[1.20rem] p-[10px]">22. < video <span>___</span>="video.mp4" controls > < /video > </label><br>
+                            <input type="text" id="question22" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question23" class="text-[1.20rem] p-[10px]">23. < link rel="stylesheet" <span>_____</span>="stylesheet.css >" </label><br>
+                            <input type="text" id="question23" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question24" class="text-[1.20rem] p-[10px]">24. < scrip  <span>___</span>="script.js" >  < /script > </label><br>
+                            <input type="text" id="question24" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                        <div class="question p-[10px]">
+                            <label for="question25" class="text-[1.20rem] p-[10px]">25. < label <span>___</span>="name" > < /label > </label><br>
+                            <input type="text" id="question25" placeholder="Enter your answer here:" class="bg-[#FEE715] p-[10px] text-[#101820] rounded mt-[5px] w-[500px]">
+                        </div>
+                            <button type="button" onclick="back()" class="p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">Previous</button>
+                            <a href="./HTML_(QuizPoint).html" class="ml-[1rem] p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70"><button>Back</button></a>
+                            <button type="button" onclick="checkAnswers()" class="ml-[1rem] p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">Next</button>
+                    </div>  
+
+                    <p id="result" style="display:none;" class="p-[10px] text-[1rem] text-[#FEE715] font-bold"></p>
+                    <button class="but p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70" id="view-incorrect" type="button" onclick="showIncorrectAnswers()" style="display:none;">review</button>
+                </div> 
+    </div>
+
+    
+</body>
+</html>
