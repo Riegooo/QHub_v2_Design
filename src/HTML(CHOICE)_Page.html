@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./output.css" rel="stylesheet">
+    <title>Quizzical Hub - HTML CHOICE</title>
+</head>
+<body class="m-0 p-0 ">
+    <header class="bg-[#101820] w-[100%] backdrop-blur-2xl fixed flex top-0 left-0 justify-between items-center z-[1000] px-[50px]">
+        <div class="flex items-center">
+            <img src="img/Quizzical-logo.png" alt="" class="w-[80px] h-[78px]">
+            <h1 class="text-[#FEE715] font-bold">QUIZZICAL HUB</h1>
+        </div>
+        <ul class="flex relative right-[50px] text-white items-center">
+            <a href="./Home_Page.html" class="ml-[2rem] text-black rounded-[10px] bg-[#FEE715] p-[8px] font-medium transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">
+                <i class="fa-solid fa-angle-left"></i>
+                <input type="button" value="Dashboard">
+            </a>
+        </ul>
+    </header>
+
+    <section class="py-[4rem] px-[2rem] w-screen max-w-[1200px] m-auto bg-[#101820]">
+        <div class="text-center py-[2rem]">
+            <h2 class="text-[2rem] font-bold text-[#FEE715]">MULTIPLE CHOICE HTML</h2>
+        </div>
+        <div>
+            <p id="result"></p>
+        </div>
+
+        <div id="container" class="container items-center px-[1rem] py-[1rem] text-center h-screen bg-[#101820]">
+            <h1 id="questionTitle" class="py-[20px] text-[2rem] text-white">no 1: How to cut a line of paragraph?</h1>
+            <div id="quiz" class="quiz">
+                <div id="question1" class="card bg-[#FEE715] mb-[10px] text-[1.80rem] rounded-[5px] transition-all ease-in-[0.5s] hover:bg-[#d8c302]">
+                    <label class="custom-radio-btn bg-[#FEE715] ">
+                        <input type="radio" name="option"  class="text-[#101820]" value="A" checked> &lt;br&gt;
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div id="question2" class="card bg-[#FEE715] mb-[10px] text-[1.80rem] rounded-[5px] transition-all ease-in-[0.5s] hover:bg-[#d8c302]">
+                    <label class="bg-[#FEE715]">
+                        <input type="radio" name="option" value="B" class="text-[2rem]"> &lt;p&gt;
+                    </label>
+                </div>
+                <div id="question3" class="card bg-[#FEE715] mb-[10px] text-[1.80rem] rounded-[5px] transition-all ease-in-[0.5s] hover:bg-[#d8c302]">
+                    <label class="bg-[#FEE715]">
+                        <input type="radio" name="option" value="C" class="text-[2rem]"> &lt;div&gt;
+                    </label>
+                </div>
+                <div id="question4" class="card bg-[#FEE715] mb-[10px] text-[1.80rem] rounded-[5px] transition-all ease-in-[0.5s] hover:bg-[#d8c302]">
+                    <label class="bg-[#FEE715]">
+                        <input type="radio" name="option" value="D" class="text-[2rem]"> &lt;input&gt;
+                    </label>
+                </div>
+
+                <div class="buttons flex">
+                    <div class="card-button">
+                        <button id="back" class="ml-[1rem] p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">Previews</button>
+                    </div>
+                    <div class="card-button">
+                        <a href="./HTML_(QuizPoint).html"><button class="ml-[1rem] p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">Back</button></a>
+                    </div>
+                    <div class="card-button">
+                        <button id="next" class="ml-[1rem] p-[10px] bg-[#FEE715] text-[#101820] font-semibold mt-[10px] transition-all ease-in-[0.5s] hover:bg-[#ccb800] active:opacity-70">Proceed</button>
+                    </div>
+                </div>
+
+                <div id="resultModal" class="modal hidden">
+                    <div class="modal-content p-[10px] text-[1rem] text-[#FEE715] font-bold bg-[#101820]">
+                        <span class="close">&times;</span>
+                        <h2>Your Results</h2>
+                        <div id="finalResult"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./Js/ForHTML(CHOICE)_Page.js"></script>
+</html>

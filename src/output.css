@@ -7,7 +7,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-100: oklch(93.6% 0.032 17.717);
+    --color-red-600: oklch(57.7% 0.245 27.325);
+    --color-red-700: oklch(50.5% 0.213 27.518);
+    --color-amber-900: oklch(41.4% 0.112 45.904);
     --color-green-600: oklch(62.7% 0.194 149.214);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-violet-700: oklch(49.1% 0.27 292.581);
@@ -349,6 +351,9 @@
   .hidden {
     display: none;
   }
+  .inline {
+    display: inline;
+  }
   .inline-block {
     display: inline-block;
   }
@@ -466,10 +471,6 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-1 {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -502,6 +503,9 @@
     --tw-border-style: none;
     border-style: none;
   }
+  .border-amber-900 {
+    border-color: var(--color-amber-900);
+  }
   .border-black {
     border-color: var(--color-black);
   }
@@ -511,8 +515,8 @@
   .border-gray-200 {
     border-color: var(--color-gray-200);
   }
-  .border-red-100 {
-    border-color: var(--color-red-100);
+  .border-red-600 {
+    border-color: var(--color-red-600);
   }
   .border-white {
     border-color: var(--color-white);
@@ -537,6 +541,9 @@
   }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
+  }
+  .bg-red-700 {
+    background-color: var(--color-red-700);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -750,6 +757,9 @@
   .text-white {
     color: var(--color-white);
   }
+  .italic {
+    font-style: italic;
+  }
   .underline {
     text-decoration-line: underline;
   }
@@ -853,6 +863,27 @@
     &:hover {
       @media (hover: hover) {
         background-color: #ccb800;
+      }
+    }
+  }
+  .hover\:bg-\[\#d8c302\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #d8c302;
+      }
+    }
+  }
+  .hover\:bg-\[\#e9d201\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #e9d201;
+      }
+    }
+  }
+  .hover\:bg-\[\#fde82d\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #fde82d;
       }
     }
   }
